@@ -8,12 +8,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #420547;
+            background-color: #f4a4f4;
         }
 
         header {
-            background-color: #180000;
-            color: #4d4155;
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 1em 0;
         }
@@ -24,29 +24,29 @@
         }
 
         nav a {
-            float: left;
+            float: right;
             display: block;
-            color: #3b0c0c;
+            color: #fff;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
 
         nav a:hover {
-            background-color: #1e1780;
-            color: #333;
+            background-color: #ddd;
+            color: #351;
         }
 
         .container {
             width: 80%;
-            margin: auto;
+            margin: manual;
             overflow: hidden;
         }
 
         #programming-section,
         #git-section,
         #main-content {
-            background-color: #70cf43;
+            background-color: #fff;
             padding: 2em;
             margin-top: 20px;
         }
@@ -71,7 +71,7 @@
 
         button {
             background-color: #333;
-            color: #584949;
+            color: #fff;
             padding: 10px 15px;
             border: none;
             cursor: pointer;
@@ -86,7 +86,7 @@
 <body>
 
     <header>
-        <h1>My pagina</h1>
+        <h1>Sua Página de Destino</h1>
     </header>
 
     <nav>
@@ -97,11 +97,17 @@
     </nav>
 
     <div class="container" id="programming-section">
-        <h2>Edit😊</h2>
+        <h2>Sobre Programação</h2>
         <p>Programação é a arte de dar instruções a um computador para realizar tarefas específicas. Aqui está um exemplo simples em JavaScript:</p>
-        
+        <pre><code>// Exemplo em JavaScript
+const mensagem = "Olá, mundo!";
+console.log(mensagem);</code></pre>
     </div>
 
+    <div class="container" id="git-section">
+        <h2>Sobre Git</h2>
+        <p>Git é um sistema de controle de versão amplamente utilizado para rastrear alterações no código-fonte durante o desenvolvimento de software. Um exemplo básico de uso do Git:</p>
+        <pre><code># Exemplo de comandos Git
 git init
 git add .
 git commit -m "Primeiro commit"
@@ -113,15 +119,22 @@ git push origin master</code></pre>
         <p>Insira suas informações abaixo:</p>
 
         <form id="contact-form">
-            <label for="name">Nome?:</label>
+            <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
             <button type="submit">Enviar</button>
         </form>
     </div>
 
     <script>
-      
+        // Adicione aqui seu código JavaScript, se necessário
+        // Por exemplo, você pode adicionar lógica de validação do formulário
     </script>
 
 </body>
