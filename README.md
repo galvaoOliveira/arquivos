@@ -1,1 +1,1 @@
-se quiser sim mano.👍
+só time grande venceu nesse fim de semana
