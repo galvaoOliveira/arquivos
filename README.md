@@ -1,2 +1,1 @@
-será que passamos por aqui?
- nois ta
+se quiser sim mano.👍
