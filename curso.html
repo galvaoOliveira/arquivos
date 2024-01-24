@@ -8,18 +8,18 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: magenta;
+            background-color: #f4a4f4;
         }
 
         header {
-            background-color: #000000;
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1em 0;
         }
 
         nav {
-            background-color: #222222;
+            background-color: #444;
             overflow: hidden;
         }
 
@@ -33,7 +33,7 @@
         }
 
         nav a:hover {
-            background-color: #75301299;
+            background-color: #ddd;
             color: #333;
         }
 
@@ -46,7 +46,7 @@
         #programming-section,
         #git-section,
         #main-content {
-            background-color: white;
+            background-color: #fff;
             padding: 2em;
             margin-top: 20px;
         }
@@ -70,7 +70,7 @@
         }
 
         button {
-            background-color: yellow;
+            background-color: #333;
             color: #fff;
             padding: 10px 15px;
             border: none;
@@ -78,7 +78,7 @@
         }
 
         button:hover {
-            background-color: purple;
+            background-color: #555;
         }
     </style>
     <title>Sua Página de Destino</title>
@@ -88,9 +88,21 @@
     <header>
         <h1>Sua Página de Destino</h1>
     </header>
+     
+    <form id="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
 
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
     <nav>
-        <a href="#programming-section">Programação</a>
+        
         <a href="#git-section">Git</a>
         <a href="github.html">GitHub</a>
         <a href="#main-content">Contato</a>
@@ -103,23 +115,8 @@
 const mensagem = "Olá, mundo!";
 console.log(mensagem);</code></pre>
     </div>
-    <div>
-        <button>Inscreva-se</button>
-    </div>
 
-    <div class="container" id="git-section">
-        <h2>Sobre Git</h2>
-        <p>Git é um sistema de controle de versão amplamente utilizado para rastrear alterações no código-fonte durante o desenvolvimento de software. Um exemplo básico de uso do Git:</p>
-        <pre><code># Exemplo de comandos Git
-git init
-git add .
-git commit -m "Primeiro commit"
-git push origin master</code></pre>
-    </div>
-
-    <div class="container" id="main-content">
-        <h2>Bem-vindo à nossa página!</h2>
-        <p>Insira suas informações abaixo:</p>
+   
 
         <form id="contact-form">
             <label for="name">Nome:</label>
@@ -134,7 +131,20 @@ git push origin master</code></pre>
             <button type="submit">Enviar</button>
         </form>
     </div>
-
+ 
+    <div class="container" id="git-section">
+        <h2>Sobre Git</h2>
+        <p>Git é um sistema de controle de versão amplamente utilizado para rastrear alterações no código-fonte durante o desenvolvimento de software. Um exemplo básico de uso do Git:</p>
+        <pre><code># Exemplo de comandos Git
+git init
+git add .
+git commit -m "Primeiro commit"
+git push origin master</code></pre>
+    </div>
+    <a href="#programming-section">Programação</a>
+    <div class="container" id="main-content">
+        <h2>Bem-vindo à nossa página!</h2>
+        <p>Insira suas informações abaixo:</p>
     <script>
         // Adicione aqui seu código JavaScript, se necessário
         // Por exemplo, você pode adicionar lógica de validação do formulário
